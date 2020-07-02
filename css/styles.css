@@ -1,0 +1,43 @@
+/* 
+цвет основного текста #757575
+вторичный цвет текста - оглавления #212121
+цвет текста белый #FFFFFF
+акцент #2196F3
+фон цвет белый #FFFFFF
+фон вторичный AFB1B8
+фон футер 2F303A
+
+
+.site-nav .link.current {
+  color: var(--title-text-color);
+} */
+
+:root {
+  --primary-text-color: #757575;
+  --title-text-color: #212121;
+  --accent-color: #2196f3;
+  --logo-color: #000000;
+  --primary-white-color: #ffffff;
+  --backgroung-second: #afb1b8;
+  --background-footer: #2f303a;
+}
+body {
+  background-color: var(--primary-white-color);
+  color: var(--primary-text-color);
+}
+.logo {
+  color: var(--logo-color);
+}
+/* Site nav */
+
+.site-nav .link {
+  color: var(--title-text-color);
+}
+
+.site-nav .link:hover,
+.site-nav .link:focus {
+  color: var(--accent-color);
+}
+.nav-contacts {
+  color: var(--primary-text-color);
+}
