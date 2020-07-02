@@ -60,7 +60,9 @@ li {
 .team .nav-contacts-link:hover,
 .team .nav-contacts-link:focus,
 .title .clients:hover,
-.title .clients:focus {
+.title .clients:focus,
+.nav-contacts-link:hover,
+.nav-contacts-link:focus {
   color: var(--accent-color);
 }
 .nav-contacts {
