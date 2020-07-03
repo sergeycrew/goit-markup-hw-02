@@ -12,6 +12,7 @@
   --accent-color: #2196f3;
   --logo-color: #000000;
   --primary-white-color: #ffffff;
+  --footer-white: rgba(255, 255, 255, 0.6);
   --backgroung-second: #afb1b8;
   --background-footer: #2f303a;
 }
@@ -21,9 +22,6 @@ body {
   font-family: roboto, sans-serif;
   font-style: normal;
   font-weight: normal;
-  /* font-size: 14px;
-  line-height: 1.7px; */
-
   letter-spacing: 0.03em;
 }
 li {
@@ -76,10 +74,8 @@ li {
   text-decoration: none;
 }
 /* Hero */
-.hero .hero-title {
-  color: var(--title-text-color);
-  font-family: Roboto, sans-serif;
-
+.hero-title {
+  color: var(--primary-white-color);
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -149,4 +145,54 @@ li {
 }
 .link {
   text-decoration: none;
+}
+.footer {
+  color: var(--primary-white-color);
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+}
+.adress-item {
+  font-size: 14px;
+  line-height: 1.7;
+
+  letter-spacing: 0.03em;
+
+  color: var(--primary-white-color);
+}
+.contact-item {
+  color: var(--footer-white);
+}
+.footer-item {
+  text-transform: uppercase;
+}
+
+.portfolio {#
+}
+
+.portfolio-nav {
+  color: var(--title-text-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+  text-align: center;
+}
+.portfolio-nav-list {
+}
+.portfolio-button {
+}
+.button-item {
+}
+
+.portfolio-main {
+}
+.portfolio-list {
+}
+.portfolio-item {
+}
+.portfolio-list-sample {
+}
+.portfolio-list-title {
+}
+.portfolio-list-description {
 }
