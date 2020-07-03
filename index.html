@@ -9,22 +9,25 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/normalize.css" />
   </head>
   <body>
     <!--Шапка сайта -->
-    <header>
-      <nav>
+    <header class="header">
+      <nav class="nav-header">
         <a href="./index.html" lang="en" class="logo"
           ><span class="logo logo-span">Web</span> Studio
         </a>
-        <ul class="site-nav">
-          <li><a href="./index.html" class="site-link">Студия</a></li>
-          <li><a href="./portfolio.html" class="site-link">Портфолио</a></li>
-          <li><a href="" class="site-link">Котакты</a></li>
+        <ul class="site-nav list">
+          <li><a href="./index.html" class="site-link link">Студия</a></li>
+          <li>
+            <a href="./portfolio.html" class="site-link link">Портфолио</a>
+          </li>
+          <li><a href="" class="site-link link">Котакты</a></li>
         </ul>
       </nav>
       <address>
-        <ul class="nav-contacts">
+        <ul class="nav-contacts list">
           <li>
             <a href="mailto:info@devstudio.com" class="nav-contacts-link"
               >info@devstudio.com</a
@@ -42,17 +45,17 @@
       <!--Hero-->
       <section class="hero">
         <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
-        <button class="button">Заказать услугу</button>
+        <button type="button" class="button">Заказать услугу</button>
       </section>
       <!--Принципы работы-->
       <section class="principles">
         <!--Заголовок не должно быть видно-->
-        <h2>Принципы</h2>
-        <ul>
-          <li>
+        <h2 hidden class="title">Принципы</h2>
+        <ul class="principles-list list">
+          <li class="principles-item">
             <img src="#" alt="иконка спутника" width="70" />
             <h3 class="principles-title">Внимание к деталям</h3>
-            <p class="principles-item">
+            <p class="principles-description">
               Идейные соображения, а также начало повседневной работы по
               формированию позиции.
             </p>
@@ -60,7 +63,7 @@
           <li>
             <img src="#" alt="иконка часов" width="70" />
             <h3 class="principles-title">Пунктуальность</h3>
-            <p class="principles-item">
+            <p class="principles-description">
               Задача организации, в особенности же рамки и место обучения кадров
               влечет за собой.
             </p>
@@ -68,7 +71,7 @@
           <li>
             <img src="#" alt="иконка компъютера" width="70" />
             <h3 class="principles-title">Планирование</h3>
-            <p class="principles-item">
+            <p class="principles-description">
               Равным образом консультация с широким активом в значительной
               степени обуславливает.
             </p>
@@ -76,7 +79,7 @@
           <li>
             <img src="#" alt="иконка космонавта" width="70" />
             <h3 class="principles-title">Современные технологии</h3>
-            <p class="principles-item">
+            <p class="principles-description">
               Значимость этих проблем настолько очевидна, что реализация
               плановых заданий.
             </p>
@@ -86,7 +89,7 @@
       <!--Сервисы-->
       <section class="service">
         <h2 class="title">Чем мы занимаемся</h2>
-        <ul>
+        <ul class="service-list list">
           <li class="service-item">
             <img src="./images/Services/img.jpg" width="370" alt="Ноутбук" />
             <h3 class="service-title">Десктопные приложения</h3>
@@ -108,7 +111,7 @@
       <!--Команда-->
       <section class="team">
         <h2 class="title">Наша команда</h2>
-        <ul>
+        <ul class="team-list list">
           <li class="team-profile">
             <img
               src="./images/Staff/img-(2).jpg"
@@ -117,8 +120,8 @@
             />
             <h3 class="team-member">Николай Кучеренко</h3>
             <p lang="en" class="team-occupation">Product Designer</p>
-            <ul>
-              <li>
+            <ul class="social-team-list-links list">
+              <li class="social-team-item">
                 <a
                   href=""
                   aria-label="иконка инстаграма"
@@ -126,7 +129,7 @@
                   ><img src="#" alt="иконка инстаграмма"
                 /></a>
               </li>
-              <li>
+              <li class="social-team-item">
                 <a
                   href=""
                   aria-label="иконка твиттера"
@@ -134,7 +137,7 @@
                   ><img src="#" alt="иконка твиттера"
                 /></a>
               </li>
-              <li>
+              <li class="social-team-item">
                 <a
                   href=""
                   aria-label="иконка фейсбука"
@@ -142,7 +145,7 @@
                   ><img src="#" alt="иконка фейсбука"
                 /></a>
               </li>
-              <li>
+              <li class="social-team-item">
                 <a
                   href=""
                   aria-label="иконка ликедина"
@@ -160,8 +163,8 @@
             />
             <h3 class="team-member">Ольга Иванова</h3>
             <p lang="en" class="team-occupation">Frontend Developer</p>
-            <ul>
-              <li>
+            <ul class="social-team-list-links list">
+              <li class="social-team-item">
                 <a
                   href=""
                   aria-label="иконка инстаграма"
@@ -169,7 +172,7 @@
                   ><img src="#" alt="иконка инстаграмма"
                 /></a>
               </li>
-              <li>
+              <li class="social-team-item">
                 <a
                   href=""
                   aria-label="иконка твиттера"
@@ -177,7 +180,7 @@
                   ><img src="#" alt="иконка твиттера"
                 /></a>
               </li>
-              <li>
+              <li class="social-team-item">
                 <a
                   href=""
                   aria-label="иконка фейсбука"
@@ -185,7 +188,7 @@
                   ><img src="#" alt="иконка фейсбука"
                 /></a>
               </li>
-              <li>
+              <li class="social-team-item">
                 <a
                   href=""
                   aria-label="иконка ликедина"
@@ -203,8 +206,8 @@
             />
             <h3 class="team-member">Андрей Шевченко</h3>
             <p lang="en" class="team-occupation">Marketing</p>
-            <ul>
-              <li>
+            <ul class="social-team-list-links list">
+              <li class="social-team-item">
                 <a
                   href=""
                   aria-label="иконка инстаграма"
@@ -212,7 +215,7 @@
                   ><img src="#" alt="иконка инстаграмма"
                 /></a>
               </li>
-              <li>
+              <li class="social-team-item">
                 <a
                   href=""
                   aria-label="иконка твиттера"
@@ -220,7 +223,7 @@
                   ><img src="#" alt="иконка твиттера"
                 /></a>
               </li>
-              <li>
+              <li class="social-team-item">
                 <a
                   href=""
                   aria-label="иконка фейсбука"
@@ -228,7 +231,7 @@
                   ><img src="#" alt="иконка фейсбука"
                 /></a>
               </li>
-              <li>
+              <li class="social-team-item">
                 <a
                   href=""
                   aria-label="иконка ликедина"
@@ -246,8 +249,8 @@
             />
             <h3 class="team-member">Иван Николаев</h3>
             <p lang="en" class="team-occupation">UI Designer</p>
-            <ul>
-              <li>
+            <ul class="social-team-list-links list">
+              <li class="social-team-item">
                 <a
                   href=""
                   aria-label="иконка инстаграма"
@@ -255,7 +258,7 @@
                   ><img src="#" alt="иконка инстаграмма"
                 /></a>
               </li>
-              <li>
+              <li class="social-team-item">
                 <a
                   href=""
                   aria-label="иконка твиттера"
@@ -263,7 +266,7 @@
                   ><img src="#" alt="иконка твиттера"
                 /></a>
               </li>
-              <li>
+              <li class="social-team-item">
                 <a
                   href=""
                   aria-label="иконка фейсбука"
@@ -271,7 +274,7 @@
                   ><img src="#" alt="иконка фейсбука"
                 /></a>
               </li>
-              <li>
+              <li class="social-team-item">
                 <a
                   href=""
                   aria-label="иконка ликедина"
@@ -284,11 +287,11 @@
         </ul>
       </section>
       <!--Клиенты-->
-      <section>
+      <section class="clients">
         <h2 class="title">Постоянные клиенты</h2>
-        <ul>
-          <li>
-            <a href="" class="client"
+        <ul class="clients-list list">
+          <li class="clients-list-item">
+            <a href="" class="clients-link"
               ><img
                 src="./images/Clients/logo-1.svg"
                 alt="Компания 1"
@@ -296,8 +299,8 @@
                 height="90"
             /></a>
           </li>
-          <li>
-            <a href="" class="client"
+          <li class="clients-list-item">
+            <a href="" class="clients-link"
               ><img
                 src="./images/Clients/logo-2.svg"
                 alt="Компания 2"
@@ -305,8 +308,8 @@
                 height="90"
             /></a>
           </li>
-          <li>
-            <a href="" class="client"
+          <li class="clients-list-item">
+            <a href="" class="clients-link"
               ><img
                 src="./images/Clients/logo-3.svg"
                 alt="Компания 3"
@@ -314,8 +317,8 @@
                 height="90"
             /></a>
           </li>
-          <li>
-            <a href="" class="client"
+          <li class="clients-list-item">
+            <a href="" class="clients-link"
               ><img
                 src="./images/Clients/logo-4.svg"
                 alt="Компания 4"
@@ -323,8 +326,8 @@
                 height="90"
             /></a>
           </li>
-          <li>
-            <a href="" class="client"
+          <li class="clients-list-item">
+            <a href="" class="clients-link"
               ><img
                 src="./images/Clients/logo-5.svg"
                 alt="Компания 5"
@@ -332,8 +335,8 @@
                 height="90"
             /></a>
           </li>
-          <li>
-            <a href="" class="client"
+          <li class="clients-list-item">
+            <a href="" class="clients-link"
               ><img
                 src="./images/Clients/logo-6.svg"
                 alt="Компания 6"
@@ -346,14 +349,14 @@
     </main>
     <!--Footer-->
     <footer class="footer">
-      <div>
+      <div class="footer-adress">
         <a href="./index.html" lang="en" class="logo"
           ><span class="logo logo-span">Web</span> Studio
         </a>
 
         <address>
-          <ul>
-            <li>
+          <ul class="footer-adress-list list">
+            <li class="footer-adress-item">
               <a
                 href="https://goo.gl/maps/unFQgFFf9pp8mS7Y9"
                 target="_blank"
@@ -361,12 +364,12 @@
                 >г. Киев, пр-т Леси Украинки, 26</a
               >
             </li>
-            <li>
+            <li class="footer-adress-item">
               <a href="mailto:info@example.com" class="contact-item link"
                 >info@example.com</a
               >
             </li>
-            <li>
+            <li class="footer-adress-item">
               <a href="tel:+380991111111" class="contact-item link"
                 >+38 099 111 11 11</a
               >
@@ -375,24 +378,24 @@
         </address>
       </div>
       <div>
-        <b class="footer-item">присоединяйтесь</b>
-        <ul class="social">
-          <li>
+        <b class="footer-description">присоединяйтесь</b>
+        <ul class="footer-social-list list">
+          <li class="footer-social-item">
             <a href="" aria-label="иконка твиттера" class="nav-contacts-link"
               ><img src="#" alt="иконка твиттера"
             /></a>
           </li>
-          <li>
+          <li class="footer-social-item">
             <a href="" aria-label="иконка инстаграмма" class="nav-contacts-link"
               ><img src="#" alt="иконка инстаграмма"
             /></a>
           </li>
-          <li>
+          <li class="footer-social-item">
             <a href="" aria-label="иконка фейсбука" class="nav-contacts-link"
               ><img src="#" alt="иконка фейсбука"
             /></a>
           </li>
-          <li>
+          <li class="footer-social-item">
             <a href="" aria-label="иконка ликедина" class="nav-contacts-link"
               ><img src="#" alt="иконка ликедина"
             /></a>
