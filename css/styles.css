@@ -66,7 +66,8 @@ body {
 .clients-link:hover,
 .clients-link:focus,
 .nav-contacts-link:hover,
-.nav-contacts-link:focus {
+.nav-contacts-link:focus,
+.site-nav .current-site {
   color: var(--accent-color);
 }
 
@@ -140,7 +141,8 @@ body {
 }
 
 /* team */
-.team {
+.team-member,
+.team-occupation {
   font-size: 16px;
   line-height: 1.875;
 }
