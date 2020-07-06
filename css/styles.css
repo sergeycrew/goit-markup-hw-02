@@ -164,10 +164,11 @@ body {
   font-size: 14px;
   line-height: 1.14;
 }
-
+.footer-adress-list {
+  line-height: 1.71;
+  font-style: normal;
+}
 .adress-item {
-  font-size: 14px;
-  line-height: 1.7;
   color: var(--primary-white-color);
 }
 .contact-item {
